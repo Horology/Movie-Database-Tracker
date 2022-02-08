@@ -18,7 +18,7 @@ export default function Main(){
         <div id="main">    
             <h1 className = 'title'>Movie Database</h1>
             <p align = "center" style = {{color: 'red'}}> Created this Web Application using React, Context API, a movie API, and TailwindCSS  </p>
-            <form className = 'searchbar text-blue'>
+            <form className = 'searchbar text-secondary2'>
                 <label for = "movie">Enter Movie title </label>
                 <input className = 'input-field bg-gray-light' 
                 type = "text" 

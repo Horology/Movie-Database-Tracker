@@ -1,14 +1,17 @@
-
-
-
-
+:root {
+  --primary-text: #780000;
+  --primary-text2: #669BBC;
+  --background-color: #FDF0D5;
+  --background-color2: #003049;
+}
 .title { 
   width: 100%;
   text-align: center;
   margin: auto;
   margin-top: 2rem;
   font-size: 100px;
-  color: lightgrey;
+  color: var(--background-color);
+  user-select: none;
 }
 
 .searchbar {
@@ -24,18 +27,24 @@
 .database-container {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  
   grid-gap: 20px;
   width: 100%;
   padding: 100px 100px;
   background-color: transparent;
-
   text-align: center; 
-  color: white;
 }
 @media screen and (min-width:1000px){
   .database-container{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 5rem;
+  }
+
+}
+@media screen and (max-width:600px){
+  .database-container{
+    grid-template-columns:1fr 1fr;
+    column-gap: 2rem;
   }
 
 }
@@ -46,7 +55,7 @@
   height: 300px;
   background-color: blue;
   text-align: center; 
-  color: white;
+  color: var(--);
   font-size: 2rem;
   font-weight: bold;
   overflow: hidden;

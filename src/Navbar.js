@@ -6,7 +6,7 @@ const Navbar = () => {
     console.log(location);
 
     return (
-        <div className = 'font-black text-4xl uppercase bg-transparent text-blue mx-auto text-center flex place-content-end'>
+        <div className = 'font-black text-4xl uppercase bg-transparent text-secondary mx-auto text-center flex place-content-end'>
 
             <div className="flex justify-between">
                 <Link to = '/'>

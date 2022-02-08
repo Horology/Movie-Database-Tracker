@@ -8,12 +8,12 @@ export default function SingleMovie({movieId}){
   
     return(
         <div>
-            <div className = 'img-container'>
+            <div className = 'img-container bg-secondary2'>
                 <img className = 'img-container m-auto' src = {`${movie.Poster}`} />
             </div>
             <div className = 'flex flex-col'>
-                <h2 className = 'text-blue mt-2'>{movie.Title}</h2>
-                <div className = ' mt-1'>{movie.Year}</div>
+                <h2 className = 'text-secondary2 mt-2'>{movie.Title}</h2>
+                <div className = 'text-secondary2 mt-1'>{movie.Year}</div>
             </div>
         </div>
     )

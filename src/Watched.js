@@ -11,7 +11,7 @@ const Watched = () => {
 
     if(!moviesWatched.length){
         return(
-            <div className="text-yellow text-center mt-40">Empty! Start adding movies please!</div>
+            <div className="text-secondary2 text-center mt-40">Empty! Start adding movies please!</div>
         )
     }
 
@@ -32,7 +32,7 @@ const Watched = () => {
                                 <Thumbnail key = {index} 
                                 value = {movie}/>
                             </button>  
-                            <button className = 'bg-indigo-500' onClick = {()=>{handleRemove(id)}}> Remove</button>
+                            <button className = 'bg-secondary2 mt-3 text-secondary p-1 hover:bg-blue' onClick = {()=>{handleRemove(id)}}> Remove</button>
                         </div>
 
                         

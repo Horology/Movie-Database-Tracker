@@ -11,7 +11,7 @@ const Watchlist = () => {
 
     if(!moviesWatchlist.length){
         return(
-            <div className= "text-yellow text-center mt-40">Empty! Start adding movies please!</div>
+            <div className= "text-secondary2 text-center mt-40">Empty! Start adding movies please!</div>
         )
     }
 
@@ -39,8 +39,8 @@ const Watchlist = () => {
                                 <Thumbnail key = {index} 
                                 value = {movie}/>
                             </button>  
-                            <button className = 'bg-blue-400' onClick = {()=>{handleWatched(id)}}> Watched</button>
-                            <button className = 'bg-red-400' onClick = {()=>{handleRemove(id)}}> Remove</button>
+                            <button className = 'bg-secondary2 m-3 text-secondary p-1 hover:bg-blue' onClick = {()=>{handleWatched(id)}}> Watched</button>
+                            <button className = 'bg-secondary2 m-3 text-secondary p-1 hover:bg-blue' onClick = {()=>{handleRemove(id)}}> Remove</button>
                         </div>
                     )
                 })}

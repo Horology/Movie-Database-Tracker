@@ -27,7 +27,7 @@ const Button = ({value, id}) => {
   
     return (
         <button 
-        className = 'bg-blue text-sm px-2 mt-3 hover:bg-violet-400 disabled:bg-gray hover:bg-blue-dark'
+        className = 'bg-secondary2 text-secondary text-sm px-2 mt-3 hover:bg-violet-400 disabled:bg-purple hover:bg-blue-dark'
         onClick = {() => {handleAddition(value, id)}} 
         disabled = {disable}>
             {value}

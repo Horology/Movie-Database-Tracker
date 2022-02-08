@@ -13,7 +13,7 @@ const Thumbnail = ({value:{Title, Year, imdbID, Type, Poster}}) => {
     
     return (
         <div className = ' movie-thumbnail border' style = { {backgroundImage:`url(${Poster})`}}>
-            <div className = 'text-gray-light'>Title: {Title}</div>
+            <div className = 'text-secondary'>Title: {Title}</div>
             <div className = 'text-gray-light'>Release Year: {Year}</div>
         </div>
     )
