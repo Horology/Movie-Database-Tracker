@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useGlobalContext} from './context';
 import MovieInfo from './MovieInfo'; 
 import SingleMovie from './SingleMovie';
@@ -10,8 +10,17 @@ export default function Main(){
     const {customStyles, modalIsOpen, setIsOpen, afterOpenModal, closeModal}= useGlobalContext();
     const {movies} = useGlobalContext();
     const [movieId, setMovieId] = useState(); 
+    const [ a , b ] = useState() 
 
+    useEffect(() =>{
+        console.log(query)
+    })
     
+    const handleEnter = (e) =>{
+        if (e.keyCode === 13) {
+            e.preventDefault()
+        }
+    }
 
     return(
         
@@ -26,10 +35,12 @@ export default function Main(){
                 name = "movie"
                 placeholdar = 'hello'
                 value = {query}
-                onChange = {(e) =>{setQuery(e.target.value)}}
-                onKeyDown = {(e)=>{e.preventDefault()}}
+                disabled = {false}
+                onChange = {(e) =>{e.preventDefault(); setQuery(e.target.value); console.log(e.target.value)}}
+                onKeyDown = {(e)=>{handleEnter(e);}}
                 />
             </form> 
+
             <div className = "database-container">
                 {movies.map((movie) => {
                     let id = movie.imdbID;
